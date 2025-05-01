@@ -1,0 +1,87 @@
+2025-03-10 21:07:14,279 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-10 21:07:14,279 - [33mPress CTRL+C to quit[0m
+2025-03-10 21:07:14,279 -  * Restarting with stat
+2025-03-10 21:07:14,534 -  * Debugger is active!
+2025-03-10 21:07:14,545 -  * Debugger PIN: 258-642-654
+2025-03-10 21:13:19,945 -  * Detected change in 'C:\\Users\\LENOVO\\Fraud_Detection\\app.py', reloading
+2025-03-10 21:13:19,981 -  * Restarting with stat
+2025-03-10 21:13:20,272 -  * Debugger is active!
+2025-03-10 21:13:20,275 -  * Debugger PIN: 258-642-654
+2025-03-10 21:56:51,999 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-10 21:56:52,009 - [33mPress CTRL+C to quit[0m
+2025-03-10 21:56:52,009 -  * Restarting with stat
+2025-03-10 21:56:52,350 -  * Debugger is active!
+2025-03-10 21:56:52,350 -  * Debugger PIN: 258-642-654
+2025-03-10 21:57:16,095 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request version ('úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+2025-03-10 21:57:16,095 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03\x13\x17XÊ\x13Ý\x1brÛ£\x1dZ\x94\x97G\x8d¬_$à\x17Ûÿ~\x1f#k¹\x1eµa\x18 ¶ëÑè)£CF­©Q§c¥RÖU1D^Ý\x81O\x8bG;k\x9d\x9fy\x9e\x8d\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s[0m" 400 -
+2025-03-10 21:57:16,097 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request version ('5á\x98"Ô¯ñ')
+2025-03-10 21:57:16,097 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03ÈHS\x1bÑ\x9c\x83\x98ÌÏ£5~\x1bØB¦¨\\\x92årû!e\x1cFP\x12]ýe ã¼\x04\x19Q\\\x06)`\x1e\x879\x8cÕÐ¸ÒëÖä·\x97µA%íõ,9]\x9dv\x00 ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063úú\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01ÿ\x01\x00\x01\x00\x003\x04ï\x04íÚÚ\x00\x01\x00\x11ì\x04ÀÁU´\x97l®`SÂ\\0¶ÈY ¬¬©\x8bè¹«%Q\x13ñe?\x96TwBQ\x12©\x9d~Ú\x9f½Å~G°\x01=6\x13×\x81 5á\x98"Ô¯ñ[0m" 400 -
+2025-03-10 21:57:16,109 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+2025-03-10 21:57:16,109 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03[0m" 400 -
+2025-03-10 21:57:16,114 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request version ("#]#y,2UDEÉ²à\x00\x01\x03}c2ÇüÐ¶Ýr\xadS\\'Q¼®á\x14\x9d#ô\x148a§")
+2025-03-10 21:57:16,114 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03ßÈIS\x03NI£\x83\x02í¾Þt\x8bã2Áû¥\x80ñ Å\x11ðÙjÀu\x98´ ¢Òÿ?¹ÏO\x1cÁ¨ÂíJõ\x90|<\x17n\x19ß\x86B¨üêu\x04uT0È\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SJJ\x00\x00\x00-\x00\x02\x01\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1ÿ\x01\x00\x01\x00Di\x00\x05\x00\x03\x02h2\x003\x04ï\x04íÊÊ\x00\x01\x00\x11ì\x04À!ÁTäe4ªü¦i°\x99n:\x88\x17¨\x81ÎÊ\x95¾\x1cª`\x13\x16Ïát\x9c\x1b\x9d`å\x19û\x19{\x9fR\x08'÷wj\x83Ï5\x88\x00GÀ%½ø\x98u\x94\x1cÕÁ+A\x93\x93RÇ(¢ÑTós\x88cW9/\x84\x86Ì\x8b'¨\x07\x15\x15Ë\x12g%hr\x08³[ø$3\x04­\x9c\x9c\x1aw\x05\x86]\x8b\x18ÏÙ»ÉÛª8\x9cgàÛ½Ó\x07¥\x0ch¢'Ú\x9c\x88\x96Y\x9f¬Ë¢¨\x06¥\x91Nº\x12µêøPy93R¶£àã$b\x9ccÝ\x92svæGi¬l?C*5X@f\x07vûêÂ+¦1\x89É\x98Øv=~Ç¤,ª,¹8o\x12\x83HÖÇ\x12\x19\x88\x7fwÆÏ®\x18w\x7fI\x0d\x05#K\x15xG2\x0c\x082é`«¤\x0d7[\x9cÄå\x12Ûd664u\x00Y¼êV]*,©'`ºò \x12\x1f\x84¥¦d\x890\x83\x0bQA\x96I%G¬ñ\x8f\x99º³'Ú¸.·Î0Ö,W\x9cj\x06I+Ìu´\x19ð\x1a\x14\x87´ÛÈ¡µØ#zåwE\x8bÊ\x02Å^)JvÏ7jüÇ]\x95±m\x90BJÄFR§¹ÄX\x15:@\x99K\x1ajso\x17\x81´cB­\x06{x$0²¢\x9aGKÍÀ\x8b\x0fVéEPWV?ö\x13Óq\x9d\x86Ö\x0fÜöInzd\x9dÈW\x99÷µüñ¥ÎàÎng\x84<PsB²C­¬Í¢#\x12ùK¨\x80\x91;]Ø\x00Æ³\x8e\x01H\x98\x8eÃK`ù¿fÊ\x8c¤IJÃ\x89\x8fÓ\x85\x02¸ò¦L5w5\x16=+\x197æ+_ð\x1b¿ö\x1aÀ\x99ò\x1etg}\x06w\x9b{ÚÎZf\x19i Ì$tÊ±' ^Æ: :\x915Ð0\x16ÙÊµ\x04E\x87\x16{|\x17A+ #]#y,2UDEÉ²à\x00\x01\x03}c2ÇüÐ¶Ýr­S\\'Q¼®á\x14\x9d#ô\x148a§[0m" 400 -
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request version ('I3)ý')
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03ÓéàÉ\x16vÚ\x16Ôh\x1cD;\x12T è4\x15:\x14i°¯¾Å\x1etÁõ¼\x91 Î¬Kc>\x18,Â'Ýí­ÙLË(uG\x87öçVNò²\x87/Á\x16õ^±\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93ÊÊ\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x12\x00\x00\x00-\x00\x02\x01\x01\x003\x04ï\x04í::\x00\x01\x00\x11ì\x04À\x09û£÷\x18¶z6AÛ¹Ì\x84ì[rñ\x12Ë\x1bY\x02jOÈ 3f×"\x1b©+i»¡Ø%GI3Qöø\x1a]Ág·¢\x1eäé\x1a\x080Ê×\x91{ÿ\x89\x01\x02\\<Ìò\x05\x9d\x10Qµ\x02¿\x016\x83@\x92´±\x80\x05tÉ\x93ñü\x05g`7¸F\x0eA¥\x92HÂº\x90\x011ãb¸/gÀ[ñy\x9ej\x00uÛQ½e\x19TÐ\x17ºÉv6\x85\x0bI3)ý[0m" 400 -
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03e')
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03e[0m" 400 -
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03s\x04¿T¥°\x8b©@t|Àf\x06æ°\x99-\x9f[0m" 400 -
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] code 400, message Bad request version ('ÀõîA\x98eÞþ©Vèu\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00')
+2025-03-10 21:57:16,141 - 127.0.0.1 - - [10/Mar/2025 21:57:16] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Kù\x0425p>\x1b\x1f×u=\x06O\x92Á,\x98\x14Rêñ¯(<k\x16A\x01V$& Eÿ\x97\x98r\x13ªôréüç\x9dÇ^\x1a\x13\x0bÇ·ò\x0e%\x04Ã0\x99nî_9\x1a\x00 \x1a\x1a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sªª\x00\x00\x00\x12\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01§\x00 \x8e\x80ì°Ò8ð\x9c; ÷\x8aq\x99l¤OÒ\x07ðö\x85XVÙ\x9eZõüð\x1ef\x00°\x88^Q\x99\x9b\x83@<\x18:+¾\x8eè\x80ÇéÓ}BckMxs\x16¢\x04D\x99åwSÌ>`|\x95ýy»¿ºë\x17pìoV¼\x03ß»\x0d\x9dOªRù3î§¡gU\x83\x85/\x9c\x95£Íì\x80&¦M£\x1eB\x7fÐ´Ç¹ÄB\x8e\x1bH\x0d\x10\x9fR\x94\x18ö=ÌO÷A\x9c:\x9eÚ\x14:ûÎ\x94\x8b\x88Â\x0c\x02r\x06\x8eS\x1eºNþc«?E)ã¨*q;eôðµ÷ý\x06Ù«Z/ÜîEOÉ\x7f\x18[¦\x0e¡WÑ,óÉn\x14 ÀõîA\x98eÞþ©Vèu\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00[0m" 400 -
+2025-03-10 21:57:18,650 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad request version ('ÙÌM\x8a\x9d\x15é£|ËüÅª')
+2025-03-10 21:57:18,650 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03H§\x1f8ý\x03Èe\\Èü ÙÌM\x8a\x9d\x15é£|ËüÅª[0m" 400 -
+2025-03-10 21:57:18,650 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x1a\x1a\x00\x00\x00')
+2025-03-10 21:57:18,650 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x0fS7+ Ìª\x15\x80¯\x10_Ì&I\x193¶Wù\x8f~µM-Ô\x845ç6$$ \x8bÊ¦¼åfD\x07Ìo\x92ÉÙ¡·^\x09\x120'\x11J¹zz\x04ð\x8cwä|`\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x1a\x1a\x00\x00\x00[0m" 400 -
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03>][0m" 400 -
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S')
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x95¶§V0\x99ùõod½1EC%Hd,8\x0dó\x99¡!ÜG\x12þ)é\x87\x88 ZGÒì\x94\x844¶|JLo¶.PÔ\x96-4ýjzM±Îî)\x7f\x16ç>*\x00 êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S[0m" 400 -
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad request syntax ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03O')
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03O[0m" 400 -
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] code 400, message Bad request version ('8¥$º@')
+2025-03-10 21:57:18,658 - 127.0.0.1 - - [10/Mar/2025 21:57:18] "[31m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x035\x982\x82¡\x968jÄ]\x9eÏè\x9eÒÐø_cÜ\x13Ã¤Ðó\x90\x1d\x92\x87ê¬y ñ\x88\x9dS?MqsÝCB\x87\x9fäÃìÏÞeÑ\x83ø!\x06N\x93+\x91\x1c.ÏX\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00-\x00\x02\x01\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01c\x00 ]4\x91æÌ\x95Æê³ÚU¹\x9dÜCðî»o|Øýæ¼íSÅ$Hè\x00q\x00°ÕJ\x0bÍÔ&´\x1b9a_>n7ð¬E/wg!\x83H¾v\x1eèÊ®öÅ{óB\x90ZôTí\x1fVSS\x85}C­\x17Îmj\\Âz\x09ÎÌ×`LtE\x051!\x88\x98\x03à,\x0b«\x129àç!£´´\x85É×GYS8È\x14\x04,\x83\x0e\x81\x15\x17áiÒ\x011 \x11¢\x09\x82Äº m3\x16h|X{¿]q¶. \x8eàD©O\x0dÅ¥û1\x82=ð¨W\x1c8¥$º@[0m" 400 -
+2025-03-10 21:59:36,795 - 127.0.0.1 - - [10/Mar/2025 21:59:36] "GET /fraud_alerts HTTP/1.1" 200 -
+2025-03-10 21:59:37,515 - 127.0.0.1 - - [10/Mar/2025 21:59:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-10 22:15:37,571 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-10 22:15:37,571 - [33mPress CTRL+C to quit[0m
+2025-03-10 22:15:37,571 -  * Restarting with stat
+2025-03-10 22:15:37,903 -  * Debugger is active!
+2025-03-10 22:15:37,919 -  * Debugger PIN: 258-642-654
+2025-03-19 19:27:27,334 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-19 19:27:27,334 - [33mPress CTRL+C to quit[0m
+2025-03-19 19:27:27,335 -  * Restarting with stat
+2025-03-19 19:27:27,590 -  * Debugger is active!
+2025-03-19 19:27:27,594 -  * Debugger PIN: 560-116-775
+2025-03-19 19:33:21,860 - 127.0.0.1 - - [19/Mar/2025 19:33:21] "GET /fraud_alerts HTTP/1.1" 200 -
+2025-03-19 19:38:17,006 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-19 19:38:17,006 - [33mPress CTRL+C to quit[0m
+2025-03-19 19:38:17,008 -  * Restarting with stat
+2025-03-19 19:38:17,271 -  * Debugger is active!
+2025-03-19 19:38:17,274 -  * Debugger PIN: 560-116-775
+2025-03-19 19:38:46,301 - 127.0.0.1 - - [19/Mar/2025 19:38:46] "GET /fraud_alerts HTTP/1.1" 200 -
+2025-03-19 19:38:46,394 - 127.0.0.1 - - [19/Mar/2025 19:38:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-22 23:54:39,126 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-22 23:54:39,126 - [33mPress CTRL+C to quit[0m
+2025-03-22 23:54:39,126 -  * Restarting with stat
+2025-03-22 23:54:39,726 -  * Debugger is active!
+2025-03-22 23:54:39,739 -  * Debugger PIN: 560-116-775
+2025-03-22 23:57:19,236 - 127.0.0.1 - - [22/Mar/2025 23:57:19] "POST /update_passwords HTTP/1.1" 200 -
+2025-03-22 23:58:00,916 - 127.0.0.1 - - [22/Mar/2025 23:58:00] "POST /update_passwords HTTP/1.1" 200 -
+2025-03-23 00:32:53,295 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-23 00:32:53,295 - [33mPress CTRL+C to quit[0m
+2025-03-23 00:32:53,310 -  * Restarting with stat
+2025-03-23 00:32:53,842 -  * Debugger is active!
+2025-03-23 00:32:53,846 -  * Debugger PIN: 560-116-775
+2025-04-01 14:31:02,805 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-01 14:31:02,807 - [33mPress CTRL+C to quit[0m
+2025-04-01 14:31:02,811 -  * Restarting with stat
+2025-04-01 14:31:03,419 -  * Debugger is active!
+2025-04-01 14:31:03,437 -  * Debugger PIN: 560-116-775
