@@ -204,6 +204,7 @@ END $$
 
 DELIMITER ;
 
+-- Add these lines at the end after executing all other command in either mysql command shell or workbench before executing the backend code
 ALTER TABLE users ADD COLUMN is_deleted BOOLEAN DEFAULT FALSE;
 ALTER TABLE transactions ADD COLUMN is_deleted BOOLEAN DEFAULT FALSE;
 ALTER TABLE fraudalerts ADD COLUMN is_deleted BOOLEAN DEFAULT FALSE;
