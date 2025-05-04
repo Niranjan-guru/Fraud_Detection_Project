@@ -1,3 +1,7 @@
+-- After importing the fraud_detection.sql into your workbench please make sure to run this entire sql commands.
+
+-- If there are any errors please create a issue in the repository I will definitely look into it
+
 SELECT u.name, u.email, t.amount, t.timestamp, t.status
 FROM Users u
 INNER JOIN Transactions t ON u.user_id = t.txn_id
@@ -52,36 +56,63 @@ DELIMITER ;
 
 
 DELIMITER $$
-
+-- Please note the change in this function to avoid any operational errors in the api
 CREATE TRIGGER before_insert_transactions
 BEFORE INSERT ON transactions
 FOR EACH ROW
 BEGIN
+    -- All DECLARE statements must come first
+    DECLARE msg_text VARCHAR(255);
+    DECLARE msg_id INT;
+
     IF NEW.amount > 50000 THEN
-        SET NEW.status = 'Fraudulent';
-        
-        INSERT INTO auditlog (txn_id, log_message)
-        VALUES (NEW.txn_id, CONCAT('Transaction auto-flagged as fraudulent due to high amount: ₹', NEW.amount));
+        SET msg_text = CONCAT('Transaction auto-flagged as fraudulent due to high amount: ₹', NEW.amount);
+
+        -- Insert the message if not exists
+        INSERT IGNORE INTO audit_messages (message_text) VALUES (msg_text);
+
+        -- Get the message ID
+        SELECT message_id INTO msg_id FROM audit_messages WHERE message_text = msg_text;
+
+        -- Use message_id in auditlog
+        INSERT INTO auditlog (txn_id, message_id) VALUES (NEW.txn_id, msg_id);
+
+        SET NEW.status = 'fraudulent';
     END IF;
 END$$
 
 DELIMITER ;
 
+DELIMITER $$
 
 DELIMITER $$
 
+-- Please note these changes made in this function to avoid any operational errors in api
 CREATE TRIGGER after_update_transaction_status
 AFTER UPDATE ON transactions
 FOR EACH ROW
 BEGIN
-    IF OLD.status <> 'Fraudulent' AND NEW.status = 'Fraudulent' THEN
-        INSERT INTO AuditLog (txn_id, log_message)
-        VALUES (NEW.txn_id, CONCAT('Transaction marked as Fraudulent. User ID: ', NEW.user_id));
+    -- Declare necessary variables first
+    DECLARE msg_text VARCHAR(255);
+    DECLARE msg_id INT;
+
+    IF OLD.status <> NEW.status THEN
+        -- Prepare the log message text
+        SET msg_text = CONCAT('Status changed from ', OLD.status, ' to ', NEW.status);
+
+        -- Insert the message text into audit_messages if not exists
+        INSERT IGNORE INTO audit_messages (message_text) VALUES (msg_text);
+
+        -- Retrieve the message_id corresponding to the message_text
+        SELECT message_id INTO msg_id FROM audit_messages WHERE message_text = msg_text;
+
+        -- Insert into AuditLog with the message_id
+        INSERT INTO AuditLog (txn_id, message_id)
+        VALUES (NEW.txn_id, msg_id);
     END IF;
-END$$  
+END$$
 
 DELIMITER ;
-
 
 DELIMITER $$
 
@@ -125,51 +156,36 @@ DELIMITER ;
 
 -- Applying Transaction and Concurrency control
 -- _________________________________________________/*
-
--- Update fraudalerts and related transactions and insert into auditlog safely
--- START TRANSACTION;
-
--- -- 1. Lock the fraudalert row for update
--- SELECT * FROM fraudalerts WHERE alert_id = 6 FOR UPDATE;
-
--- -- 2. Update fraudalerts
--- UPDATE fraudalerts
--- SET status = 'Blocked', user_confirmation = 'Rejected'
--- WHERE alert_id = 6;
-
--- -- 3. Update the associated transaction status
--- UPDATE transactions
--- SET status = 'fraudulent'
--- WHERE txn_id = (SELECT txn_id FROM fraudalerts WHERE alert_id = 6);
-
--- -- 4. Log the change into auditlog
--- INSERT INTO auditlog (txn_id, log_time, message_id)
--- VALUES (
---   (SELECT txn_id FROM fraudalerts WHERE alert_id = 6),
---   CURRENT_TIMESTAMP,
---   9 -- Assuming this message_id = "Transaction marked suspicious"
--- );
-
--- COMMIT;
--- If anything fails use "ROLLBACK;"
-
--- Row Level Locking
 -- This ensures no one else modifies that row until you finish
--- 
-START TRANSACTION;
-SELECT * FROM fraudalerts WHERE alert_id = 8 FOR UPDATE;
--- Do your updates here...
-COMMIT;                     
-
--- Set Isolation level
+-- Session 1
 SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 START TRANSACTION;
--- Your queries here
+SELECT * FROM fraudalerts WHERE alert_id = 8 FOR UPDATE;
+
+UPDATE fraudalerts
+SET status = 'Blocked', user_confirmation = 'Rejected'
+WHERE alert_id = 8;
+
+UPDATE transactions
+SET status = 'fraudulent'
+WHERE txn_id = (SELECT txn_id FROM fraudalerts WHERE alert_id = 8);
+
+INSERT INTO auditlog(txn_id, log_time, message_id) VALUES((SELECT txn_id FROM fraudalerts WHERE alert_id=8), CURRENT_TIMESTAMP, 9);
+
 COMMIT;
 
-SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
--- Stricted form to avoid phantom reads
--- Example Stored Procedure
+-- SESSION 2: This will be blocked until SESSION 1 commits
+START TRANSACTION;
+
+-- Will wait because row is locked by Session 1
+SELECT * FROM fraudalerts WHERE alert_id = 8 FOR UPDATE;
+
+-- After Session 1 commits, this proceeds
+UPDATE fraudalerts
+SET status = 'Confirmed', user_confirmation = 'Approved'
+WHERE alert_id = 8;
+
+COMMIT;
 
 DELIMITER $$
 
